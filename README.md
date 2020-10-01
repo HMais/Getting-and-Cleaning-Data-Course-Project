@@ -46,8 +46,9 @@ The script is following the steps described below:
   + 3.2 use 'factor()' function to name class labels in 'data_selection'
 
 4. Appropriately labels the data set with descriptive variable names.
-  + 4.1 extract features colnames from 'features_lab' and remove extra charactere '()' 
-  + 4.2 rename 'data_selection' colnames: rename features colnames based on 'features_lab_mean_or_std' labels,
+  + 4.1 extract features colnames from 'features_lab' remove extra charactere '()' 
+  + 4.2 remove extra charactere '()' , replace "-" by "." and use descriptif labels instead of abreviations (some abreviations are preserved for the seek of simplicity)
+  + 4.3 rename 'data_selection' colnames: rename features colnames based on 'features_lab_mean_or_std' labels,
 rename subject colname 'subject' + rename target colname 'activity' 
 
 

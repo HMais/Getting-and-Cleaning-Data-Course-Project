@@ -72,7 +72,7 @@ More information about the initial set of features can be found in 'features_inf
 - 'features_info.txt': Shows source information about the variables used.
 - The following data transformations were made to generate a tidy dataset:
   + Extraction from data source, of  only the measurements on the mean and standard deviation for each feature.
-  + Appropriately labeling the data set columns with descriptive variable names based on 'features.txt'.
+  + Appropriately labeling the data set columns with descriptive variable names based on 'features.txt' (removing extra charactere and using descriptif labels instead of abreviations).
   + Factorization of the activity vector based on 'activity_labels.txt'
   + building a tidy data set 'data_tidy' with the average of each variable for each activity and each subject.
 

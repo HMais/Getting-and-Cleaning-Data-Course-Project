@@ -43,6 +43,11 @@ data_selection[,ncol(data_selection)]<-factor(data_selection[,ncol(data_selectio
 # extract features colnames from "features_lab" and remove extra charactere "()" 
 features_lab_mean_or_std<-features_lab$V2[features_lab_mean_or_std_ids]
 features_lab_mean_or_std<- gsub("()","",features_lab_mean_or_std,fixed=TRUE)
+features_lab_mean_or_std<-gsub("BodyBody","Body",features_lab_mean_or_std)
+features_lab_mean_or_std<-gsub("^f", "Frequency", features_lab_mean_or_std)
+features_lab_mean_or_std<-gsub("^t", "Time", features_lab_mean_or_std)
+features_lab_mean_or_std<-gsub("-", ".", features_lab_mean_or_std,fixed=TRUE)
+# other abreviation were not changed for the seek of simplicity
 
 # rename "data_selection" colnames: rename features colnames based on "features_lab_mean_or_std" labels 
 #+ rename subject colname "subject" + rename target colname "activity" 
